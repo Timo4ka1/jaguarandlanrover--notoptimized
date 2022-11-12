@@ -1,0 +1,344 @@
+.wrapper{
+   position: relative;
+   overflow: hidden;
+   min-height: 100%;
+}
+
+[class*="__container"]{
+   max-width: 1144px; 
+   margin: 0 auto;
+}
+
+.default{
+   background-color: #2E8B57;
+   padding: 20px 25px;
+   border-radius: 4px;
+   font-weight: 800;
+   color: white;
+}
+
+.button button{
+	position: relative;
+	z-index: 2;
+}
+
+.default:hover{
+   background: linear-gradient(180deg,#2e8b57 0%, #2c774d 80%);
+}
+
+.default:hover::before {
+	opacity: 1;
+}
+/* ==================== */
+.button{
+	border-radius: 4px;
+	letter-spacing: 0.5px;
+	font-weight: 700;
+	line-height: 1.25;
+	color: #fff;
+	display: inline-block;
+	padding: 16px 40px;
+	position: relative;
+	background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+
+}
+.button span{
+	position: relative;
+	z-index: 2;
+}
+.button::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	transition: opacity 0.3s ease 0s;
+	opacity: 0;
+	border-radius: 4px;
+	background: linear-gradient(55.95deg, #ca3530 0%, #c94d05 100%);
+}
+.button:hover::before {
+	opacity: 1;
+}
+
+/* =================== */
+
+.button--green{
+   border-radius: 4px;
+	letter-spacing: 0.5px;
+	font-weight: 700;
+	line-height: 1.25;
+	color: #fff;
+	display: inline-block;
+   padding: 20px 25px;
+	position: relative;
+   background-color: #2E8B57;
+}
+
+.button--green span{
+	position: relative;
+	z-index: 2;
+}
+.button--green::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	transition: opacity 0.3s ease 0s;
+	opacity: 0;
+	border-radius: 4px;
+   background: linear-gradient(180deg,#2e8b57 0%, #2c774d 80%);
+}
+.button--green:hover::before {
+	opacity: 1;
+}
+
+.buttons{
+	margin-bottom: 200px;
+}
+/* ============================== */
+
+.blocks--flexbox{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	row-gap: 20px;
+	margin-bottom: 140px;
+}
+
+.blocks--title{
+	font-weight: 500;
+	font-size: 24px;
+	opacity: 0.7;
+	width: 315px;
+	text-align: center;
+	padding-top: 83px ;	
+}
+
+.blocks--title:hover{
+	transition: 0.5s;
+	opacity: 0.99;
+	letter-spacing: 1px;
+	transition: all 0.5s;
+}
+
+.block{
+	flex-direction: column;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: #00000041 1px 1px 6px;
+	border-radius: 10px;
+	padding: 0px 20px;
+	background-color: white;
+	transition: all 0.5s ease 0s;
+}
+
+.block:hover{
+	box-shadow: #00000041 1px 1px 15px;
+}
+
+
+.block1-title{
+	background: url(../img/icons/section3/handshake-1.svg);
+	background-repeat: no-repeat;
+	background-position: 140px 20px;
+	background-size: 40px;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.block1--title::after{
+	content: "";
+	background: url(../img/icons/section3/handshake-1.svg);
+	width: 60px;
+	height: 60px;
+}
+
+.block1-title::before{
+	content: "";
+   width: 50px;
+   height: 50px;
+	background: url(../img/icons/section3/handshake-1.svg);
+	background: #000000;
+   position: absolute;
+   left: 135px;
+   bottom: 90px;
+   border-radius: 50%;
+	transform: scale(1.3);
+	z-index: -100;
+	opacity: 0.1;
+}
+
+.blocks--subtitle{
+	padding-top: 15px;
+
+}
+
+.blocks--subtitle{
+	font-weight: 400;
+	font-size: 18px;
+	text-align: center;
+	max-width: 315px;
+	opacity: 0.7;
+	padding-bottom: 23px;
+}
+
+.block2-title{
+	background: url(../img/icons/section3/dish.svg);
+	background-repeat: no-repeat;
+	background-position: 140px 20px;
+	background-size: 40px;
+	margin-bottom: 10px;
+	position: relative;
+	
+}
+
+.block2--title::after{
+	content: "";
+	background: url(../img/icons/section3/dish.svg);
+	width: 60px;
+	height: 60px;
+}
+
+.block2-title::before{
+	content: "";
+   width: 50px;
+   height: 50px;
+	background: url(../img/icons/section3/dish.svg);
+	background: #000000;
+   position: absolute;
+   left: 135px;
+   bottom: 42px;
+   border-radius: 50%;
+	transform: scale(1.3);
+	z-index: -100;
+	opacity: 0.1;
+}
+
+.block3-title{
+	background: url(../img/icons/section3/euro.svg);
+	background-repeat: no-repeat;
+	background-position: 140px 20px;
+	background-size: 40px;
+	margin-bottom: 10px;
+	position: relative;
+	
+}
+
+.block3--title::after{
+	content: "";
+	background: url(../img/icons/section3/euro.svg);
+	width: 60px;
+	height: 60px;
+}
+
+.block3-title::before{
+	content: "";
+   width: 50px;
+   height: 50px;
+	background: url(../img/icons/section3/euro.svg);
+	background: #000000;
+   position: absolute;
+   left: 135px;
+   bottom: 42px;
+   border-radius: 50%;
+	transform: scale(1.3);
+	z-index: -100;
+	opacity: 0.1;
+}
+
+.block4-title{
+	background: url(../img/icons/section3/bus.svg);
+	background-repeat: no-repeat;
+	background-position: 140px 20px;
+	background-size: 40px;
+	margin-bottom: 10px;
+	position: relative;
+	
+}
+
+.block4--title::after{
+	content: "";
+	background: url(../img/icons/section3/bus.svg);
+	width: 60px;
+	height: 60px;
+}
+
+.block4-title::before{
+	content: "";
+   width: 50px;
+   height: 50px;
+	background:#000000  url(../img/icons/section3/bus.svg);
+   position: absolute;
+   left: 135px;
+   bottom: 42px;
+   border-radius: 50%;
+	transform: scale(1.3);
+	z-index: -100;
+	opacity: 0.1;
+}
+
+.block5-title{
+	background: url(../img/icons/section3/sleeping.svg);
+	background-repeat: no-repeat;
+	background-position: 140px 20px;
+	background-size: 40px;
+	margin-bottom: 10px;
+	position: relative;
+	
+}
+
+.block5--title::after{
+	content: "";
+	background: url(../img/icons/section3/sleeping.svg);
+	width: 60px;
+	height: 60px;
+}
+
+.block5-title::before{
+	content: "";
+   width: 50px;
+   height: 50px;
+	background:  url(../img/icons/section3/sleeping.svg);
+	background: #000000;
+   position: absolute;
+   left: 135px;
+   bottom: 42px;
+   border-radius: 50%;
+	transform: scale(1.3);
+	z-index: 1;
+	opacity: 0.1;
+}
+
+.block6-title{
+	background: url(../img/icons/section3/book.svg);
+	background-repeat: no-repeat;
+	background-position: 140px 20px;
+	background-size: 40px;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.block6--title::after{
+	content: "";
+	background: url(../img/icons/section3/book.svg);
+	width: 60px;
+	height: 60px;
+}
+
+.block6-title::before{
+	content: "";
+   width: 50px;
+   height: 50px;
+	background: url(../img/icons/section3/book.svg);
+	background: #000000;
+   position: absolute;
+   left: 135px;
+   bottom: 42px;
+   border-radius: 50%;
+	transform: scale(1.3);
+	z-index: -100;
+	opacity: 0.1;
+}
